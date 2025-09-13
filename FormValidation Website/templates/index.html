@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Website</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
+</head>
+<body>
+    <div class="sign-container">
+        <div class="header-box">
+            <p class="greeting-title">Welcome Back</p>
+            <p class="title-description">Sign in to your account to continue</p>
+        </div>
+
+        <div class="main-container">
+
+            <form class="login-form" method="POST" action="/">
+                <div class="email-box">
+                    <label class="email-label">Email:</label>
+                    <input type="text" class="username" id="username-icon" placeholder="Enter your email">
+                </div>
+                
+                <div class="password-box">
+                    <label class="password-label">Password:</label>
+                    <input type="password" class="password" id="password-icon" placeholder="Enter your password">
+                </div>
+                
+                <div class="submit-btn__box">
+                    <button type="submit" class="submit-btn">Login</button>
+                </div> 
+            </form>
+        </div>
+
+        <div class="footer-box">
+            <hr class="break-line">
+            <p class="sign-up-description">Don't have an account?<a class="sign-in-up__btn"> Sign Up</a></p>
+        </div>
+
+    </div>
+    <script src="{{url_for('static', filename = 'script.js')}}"></script>
+</body>
+</html>
